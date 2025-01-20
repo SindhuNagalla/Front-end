@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+        table,td,tr,th
+        {
+            border:2px solid black;
+            border-collapse: collapse;
+            padding:20px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Application Form</h1>
+        <form style="background-color: burlywood;">
+            <div>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname">
+            </div>
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+
+        <br><br>
+
+        <label for="Age">Age</label>
+        <input type="text" name="age" id="age">
+
+        <br><br>
+
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="male">male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <br><br>
+
+        <label for="Email">Email Address:</label>
+        <input type="text" name="Email" id="Email" placeholder="Enter email address">
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" maxlength="8">
+
+        <br><br>
+        
+        <label for="Confirm password">Confirm password:</label>
+        <input type="password" name="cf" id="confirm password" maxlength="8">
+
+        <h2 style="color:chartreuse">Positions Available:</h2>
+        <input type="radio" name="positions" id="jd">
+        <label for="jd">Junior Developer</label>
+
+        <input type="radio" name="positions" id="md">
+        <label for="md">Mid-level Developer</label>
+
+        <input type="radio" name="positions" id="sd">
+        <label for="sd">Senior Developer</label>
+        
+        <br>
+
+        <h2 style="color:chartreuse">Programming languages:</h2>
+        <input type="checkbox" name="java" id="java">
+        <label for="java">java</label>
+
+        <input type="checkbox" name="HTML" id="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="oracle" id="oracle">
+        <label for="oracle">oracle</label>
+
+        <br><br>
+
+        <table style="width:70%">
+            <tr>
+                <th colspan="2">Timetable</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Timings</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Holiday</td>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Starts from 9:30am to 5pm</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <label for="file">Upload file:</label>
+        <input type="file" name="file" id="file">
+
+        <br><br>
+
+        <label for="cover letter">Cover Letter:</label>
+        <textarea name="coverletter" id="coverletter" rows="4" cols="20"></textarea>
+
+        <br><br>
+
+        <p style="text-align: center;"><input type="submit" value="submit" style="background-color: brown; text-align: center; padding:2px;">
+        <input type="reset" value="reset" style="background-color: brown; text-align: center; padding:2px"></p>
+    </form>
+
+    <p>contact us:<br>
+        noreply@gmail.com<br>
+    </p>
+</body>
+</html>
